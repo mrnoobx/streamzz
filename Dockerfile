@@ -14,6 +14,5 @@ RUN pip install -U pip uv
 COPY requirements.txt .
 RUN uv pip install --system --no-cache-dir -r requirements.txt
 
-# Set permissions and entrypoint
-RUN chmod +x surf-tg.sh
-CMD ["bash", "surf-tg.sh"]
+# Run the bot
+CMD ["python3", "-m", "bot"]
