@@ -13,6 +13,6 @@ RUN apt-get update && apt-get install -y \
 RUN pip install -U pip uv
 COPY requirements.txt .
 RUN uv pip install --system --no-cache-dir -r requirements.txt
-
+EXPOSE 8080
 # Run the bot
 CMD ["python3", "-m", "bot"]
