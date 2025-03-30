@@ -16,4 +16,4 @@ RUN uv pip install --system --no-cache-dir -r requirements.txt
 
 # Set permissions and entrypoint
 RUN chmod +x surf-tg.sh
-CMD ["./surf-tg.sh"]
+CMD ["bash", "surf-tg.sh"]
